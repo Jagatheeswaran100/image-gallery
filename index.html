@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all .2s linear;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #000;
+        }
+
+        .home {
+            width: 100%;
+            height: 87.5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('images/sky-clouds.jpg');
+            background-position: center;
+            object-fit: cover;
+            /* filter: brightness(50%); */
+            text-transform: uppercase;
+        }
+
+        .home h1 {
+            font-size: 40px;
+            color: #fff;
+            backdrop-filter: blur(50%);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        nav {
+            background: lightseagreen;
+            margin-top: 0;
+            padding: 15px;
+            position: sticky;
+            top: .1px;
+        }
+
+        h2 {
+            font-size: 25px;
+            margin-top: 10px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            text-transform: capitalize;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .gallery a {
+            height: 200px;
+            width: 300px;
+            margin: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 3px 5px #000;
+
+        }
+
+        .gallery a img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            /* filter: grayscale(100%);
+            -webkit-filter: grayscale(100%); */
+        }
+
+        .gallery a img:hover {
+            transform: scale(1.1);
+            /* filter: none;
+            -webkit-filter: grayscale(0); */
+        }
+
+        .footer {
+            background: lightseagreen;
+            margin: 0;
+            padding: 25px;
+            font-size: 30px;
+        }
+
+        @media (min-width:320px) {
+            h1 {
+                text-align: center;
+            }
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+</head>
+
+<body>
+
+    <div class="home">
+        <h1>Welcome to jagathees' s photography</h1>
+    </div>
+    <nav>
+        <h2>Image Gallery</h2>
+    </nav>
+
+    <div class="gallery">
+
+        <a href="images/IMG-1.jpeg">
+            <img src="images/IMG-1.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-2.jpeg">
+            <img src="images/IMG-2.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-3.jpeg">
+            <img src="images/IMG-3.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-4.jpg">
+            <img src="images/IMG-4.jpg" alt="">
+        </a>
+
+        <a href="images/IMG-6.jpeg">
+            <img src="images/IMG-6.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-7.jpeg">
+            <img src="images/IMG-7.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-8.jpeg">
+            <img src="images/IMG-8.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-9.jpg">
+            <img src="images/IMG-9.jpg" alt="">
+        </a>
+
+        <a href="images/IMG-10.jpeg">
+            <img src="images/IMG-10.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-11.jpeg">
+            <img src="images/IMG-11.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-12.jpeg">
+            <img src="images/IMG-12.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-13.jpeg">
+            <img src="images/IMG-13.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-14.jpeg">
+            <img src="images/IMG-14.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-15.jpeg">
+            <img src="images/IMG-15.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-16.jpeg">
+            <img src="images/IMG-16.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-17.jpeg">
+            <img src="images/IMG-17.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-18.jpg">
+            <img src="images/IMG-18.jpg" alt="">
+        </a>
+
+        <a href="images/IMG-19.jpeg">
+            <img src="images/IMG-19.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-20.jpeg">
+            <img src="images/IMG-20.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-21.jpg">
+            <img src="images/IMG-21.jpg" alt="">
+        </a>
+
+        <a href="images/IMG-22.jpeg">
+            <img src="images/IMG-22.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-23.jpeg">
+            <img src="images/IMG-23.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-24.jpeg">
+            <img src="images/IMG-24.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-25.jpeg">
+            <img src="images/IMG-25.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-26.jpg">
+            <img src="images/IMG-26.jpg" alt="">
+        </a>
+
+        <a href="images/IMG-27.jpeg">
+            <img src="images/IMG-27.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-28.jpg">
+            <img src="images/IMG-28.jpg" alt="">
+        </a>
+
+        <a href="images/IMG-29.jpeg">
+            <img src="images/IMG-29.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-30.jpeg">
+            <img src="images/IMG-30.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-31.jpeg">
+            <img src="images/IMG-31.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-32.jpg">
+            <img src="images/IMG-32.jpg" alt="">
+        </a>
+
+        <a href="images/IMG-33.jpeg">
+            <img src="images/IMG-33.jpeg" alt="">
+        </a>
+
+        <a href="images/IMG-34.jpeg">
+            <img src="images/IMG-34.jpeg" alt="">
+        </a>
+    </div>
+
+    <div class="footer">
+        <p>Captured by Jagatheeswaran | All rights Reserved @ 2023</p>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+    <script>
+
+        lightGallery(document.querySelector('.gallery'))
+
+    </script>
+</body>
+
+</html>
